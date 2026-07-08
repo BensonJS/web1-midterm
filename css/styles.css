@@ -1,0 +1,173 @@
+
+/* Not fully sure how does works but it seem to change the appearance of the website. it makes all the elements have consistent spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* This controls how the main body, so you can edit the text, font-size, and background colour*/
+body {
+    background-color: #b7d9d8;
+    font-size: 20px;
+    font-family: tahoma, sans-serif;
+}
+
+/* This controls what's in the container from the html*/
+.container {
+    background-color: #d8eeee;
+    width: 80%;
+    /* I am a little confused on what the difference between what margin and padding does. I did do some rearch on it and I think I understand, but would like to have more clarification on it. */
+    margin: auto;
+    padding: 0px 0px 5px;
+    
+}
+
+/* This controls the header and keeps it in the middle of th header image, if this is not here it would move into the middle of the page */
+.header {
+    position: relative;
+}
+
+/* This keeps the header image the way i wanted to look and not be too big on the webite */
+.header .header-image {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 0px;
+    width: 80%;
+}
+
+/* This edits the header text and keeps it in the middle of the header image */
+.header h1 { 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 50px;
+}
+
+/* I used this to edit the navigation bar so it doesn't look like a list */
+nav {
+    text-align: center;
+    width: 80%;
+    margin: 0px auto;
+    margin-top: 0px;
+    justify-content: center;
+    padding: 5px;
+
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* this adds the black lines in the nav bar */
+nav li {
+    padding: 15px 60px;
+    border-right: 1px solid gray;
+}
+
+
+/* this seems to remove a extra border on the right side of the navigation bar, I am not sure if this is the best way to do it but it works */
+nav li:last-child {
+    border-right: none;
+}
+
+/* This edits the navigation bar links so they don't have a underline and are black, I also added some margin to make it look like the mockup */
+nav a {
+    text-decoration: none;
+    color: black;
+    margin: 80px;
+    font-weight: bold;
+}
+
+/* This edits the article section */
+.article {
+    width: 100%;
+    margin: 0px auto;
+    padding: 20px;
+    overflow: auto;
+}
+
+/* This edits the article images so they are aligned to the left and have the textwrap around them */
+.article img {
+    float: left;
+    width: 250px;
+    margin-right: 20px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+}
+
+/* This edits the facts section so it looks like a list and has some padding to make it look like the mockup */
+.facts ul {
+    padding-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+/* this makes the facts align with the rest of the content */
+.facts {
+    clear: both;
+    /* I ussed this to change the default style of the list from a square to cirles */
+    list-style-type: circle;
+    width: 100%;
+    margin: 0px auto;
+    padding: 20px;
+  
+}
+/* This edits the contact form so it looks like the mockup and is aligned with the rest of the content */
+.contact {
+    width: 100%;
+    margin: 0px auto 0;
+    padding: 10px;
+}
+
+/* this adds the box around the contact form */
+.contact form {
+    border: 1px solid #999;
+    padding: 20px;
+    width: 100%;
+}
+
+/* this edits the contact box to make it the size i like */
+.contact label {
+    margin-bottom: 5px;
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+/* this keeps the text box the rigth way in the mockup */
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #999;
+}
+
+/* ths edited the send button on the bottom */
+.contact button {
+    padding: 10px 20px;
+    background-color: #d8eeee;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+/* this keeps the words from the button beside it */
+.contact input[type="radio"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+
+footer {
+    /* this moved the footer to thhe right spot from the mockup */
+    text-align: right;
+    padding: 10px 20px 0px;
+}
