@@ -1,1 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is my midterm</title>
+    <link rel="stylesheet" href="css/styles.css">
 
+</head>
+<body>
+<!-- There's not a lot of comments on my html file mostly because I was focused on the structure and styling -->
+
+<!-- I was confused on what the id does, but it seems to connect to the href in the nav bar, so when you click on the link it takes you to that section of the page.-->
+    <header class="header" id="home">
+        <img src="images/blue-sky-clouds.jpg" alt="Blue Sky with Clouds" class="header-image">
+        
+     <h1> Benson Jolly Saganash </h1>
+        
+    </header>
+
+    <!-- div thing is confusing to me but it seems to control the content container in the css page because  I added the class="container"  -->
+    <div class="container">
+    <nav> 
+        <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#story">STORY</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </nav>
+   
+    <article class="article" id="story">
+
+    <h2>Life of Benson</h2>
+
+    <img src="images/benson-j-s.jpg" alt="Picture of Benson Smiling">
+
+    <p>
+    Benson was born on June 25, 2002, in a small indigenous community called Waswanipi. He has five siblings, four brothers and one sister. He later moved to Gatineau to study the arts. He took many different programs at Algonquin, and now he is taking Interactive Media Design. He wants to become a self-employed photographer and videographer. He likes making his own and helping other people make short films. He has made a documentary about his grandfather, who sadly attended a residential school, and about his journey back to his native culture. He wishes to make a feature-length film about the story of his grandparents; their love has inspired him to always show compassion and kindness towards others and never be ashamed to do so.
+    </p>
+    </article>
+
+<!-- I believe classs like contact, facts, etc. are used to apply specific styles to those sections in the CSS file -->
+<section class="facts">
+
+    <h2>Facts About Mr. Jolly</h2>
+
+    <ul>
+        <li>Benson is a local filmmaker in Ottawa.</li>
+        <li>He is 24 years old.</li>
+        <li>Has a large family.</li>
+        <li>Scared of deep oceans.</li>
+        <li>Favorite food is spaghetti.</li>
+    </ul>
+
+    </section>
+
+    <section class="contact" id="contact">
+
+    <h2>Contact to Learn More</h2>
+
+    <form>
+
+        <label for="name"> Your Name</label>
+        <input type="text" id="name" name="name">
+
+
+        <label for="email"> Your Email</label>
+        <input type="email" id="email" name="email">
+
+
+        <label for="message"> Your Message</label>
+        <textarea id="message" name="message" rows="5"></textarea>
+
+
+    <p>Would you like to meet Benson?</p>
+
+<label>
+    <input type="radio" name="Benson" value="yes">
+    Yes
+</label>
+
+<label>
+    <input type="radio" name="Benson" value="no">
+    No
+</label>
+
+<label>
+    <input type="radio" name="Benson" value="maybe">
+    Maybe
+</label>
+
+<!-- I learned on the internet to how i could add a line break -->
+<br><br>
+
+ <button type="submit">SEND</button>
+
+    </form>
+
+</section>
+    
+<footer>
+    <p>&copy; 2026 Benson Jolly Saganash. All rights reserved.</p>
+</footer>
+</div>
+
+</body>
+</html>
